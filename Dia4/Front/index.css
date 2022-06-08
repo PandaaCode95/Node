@@ -1,0 +1,156 @@
+.pelis{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3em;
+}
+.background{
+    width: 100%;
+    height: 92.1vh;
+    background: rgb(45,76,154);
+    background: radial-gradient(circle, rgba(45,76,154,1) 0%, rgba(31,112,156,1) 100%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.print-videoteka{
+    margin:3em;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+
+
+}
+.contact{
+    padding:3em;
+    overflow:hidden;
+    color: black;
+    font-family: 'Montserrat';
+    background-color: white;
+}
+.contact label, .contact input, .contact textarea{
+    display:block;
+    width:100%;
+    margin-bottom:8px;
+}
+.contact label{
+    font-weight: 500;
+
+}
+.contact input:not([type="submit"]), .contact textarea{
+    border:none;
+    border-bottom:2px solid #11F294;
+    font-size:  20px;
+    outline: none;
+    color:#4F4E4E;
+}
+.contact textarea{
+    min-height: 100px;
+    font-family: 'Montserrat';
+}
+input[type="submit"]{
+    padding:10px;
+    border:none;
+    background-color: white;
+    color:#11F294;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.contact{
+    font-family: 'Montserrat';
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 7px 13px 37px #4f4e4e5b;
+    margin-top: 5%;
+    
+
+}
+.boxform{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.formulario{
+    width: 50%;
+    
+    opacity: 0.7;
+    display:flex;
+    align-items:left;
+}
+.borde{
+    background-color: #111;
+    color:white;
+    padding:20px;   
+    opacity: 0.9;
+    height: min-content;
+    margin-top:10%;
+
+   }
+   .ptexto{
+    position:absolute;
+    width:100%;
+    align-items: center;
+    text-align:center;
+    color:#000;
+    font-size:17px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+}
+.botones{
+    display: flex;
+    justify-content:space-around;
+
+    margin-top: 30px;
+  
+  }
+    .boton {
+      display: flex;
+      background-color: #EBB84A; 
+      border: none;
+      color: white;
+      padding: 20px 60px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+  
+    }
+  
+  
+    .boton:hover {
+      background-color: #53cc90;
+      color: white;
+    }
+    .print-videoteka{
+        opacity: 0.8;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+   .imgp{
+       width: 50%;
+       
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    }
+    .print-videoteka img{
+        width: 150px;
+        height: auto;
+        margin: 2em;
+    }
