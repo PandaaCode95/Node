@@ -1,14 +1,16 @@
 const fs = require('fs/promises');
 
-function writeRead(path,data){
+async function imprimir(objecto){
 
-try{
-    fs.writeFile(path,data).then(() => { return fs.readFile(path, 'utf8')})
-}
-catch(err){
+    try{
+  
+    await fs.writeFile("object.json", JSON.stringify(objecto));
+    let data = await fs.readFile("object.json",'utf-8')
+      console.log(JSON.parse(data))
+  }
+  catch(err){
     console.log(err)
+  }
 }
 
-}
-
-module.exports = {writeRead};
+module.exports = {imprimir};

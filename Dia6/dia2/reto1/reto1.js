@@ -16,8 +16,7 @@ connection.connect(function(error){
     }
 })
 
-let sql = "SELECT AVG(mark) AS marksubject,student_id FROM  marks WHERE date LIKE '2022%' GROUP BY student_id; ";
-
+let sql = "SELECT student_id,mark FROM codenotch2.marks WHERE student_id BETWEEN 20 AND 25 OR mark > 8 AND date LIKE '2021%'";
 connection.query(sql, function(err, result)
 {
     if(err)
@@ -28,6 +27,30 @@ connection.query(sql, function(err, result)
         console.log(result);
     }
 })
+// let sql = "SELECT AVG(mark) AS marksubject,student_id FROM  marks WHERE date LIKE '2021%' GROUP BY student_id; ";
+
+// connection.query(sql, function(err, result)
+// {
+//     if(err)
+//     console.log(err);
+//     else
+//     {
+//         console.log("Dato Actualizado");
+//         console.log(result);
+//     }
+// })
+// let sql = "SELECT AVG(mark) AS marksubject,student_id FROM  marks WHERE date LIKE '2021%' GROUP BY student_id; ";
+
+// connection.query(sql, function(err, result)
+// {
+//     if(err)
+//     console.log(err);
+//     else
+//     {
+//         console.log("Dato Actualizado");
+//         console.log(result);
+//     }
+// })
 // let sql = "SELECT AVG(mark) AS marksubject,subject_id FROM  marks WHERE date LIKE '2022%' GROUP BY subject_id; ";
 
 // connection.query(sql, function(err, result)
@@ -52,7 +75,7 @@ connection.query(sql, function(err, result)
 //     }
 // })
 
-// let sql = "UPDATE marks SET mark = null WHERE mark > 5 AND date LIKE '2022%'";
+// let sql = "DELETE marks  WHERE mark > 5 AND date LIKE '2022%'";
 // connection.query(sql, function(err, result)
 // {
 //     if(err)

@@ -4,10 +4,11 @@ const fs = require('fs/promises');
 
 
 
-let objecto = {
-    name: "",
-    sname: "",
-    age: 0
-};
-wRO.writeRead(rC.preguntas(objecto))
+
+// // wRO.writeRead(rC.preguntas(objecto))
 // rC.preguntas(objecto).then((data) => {wRO.writeRead(data)});
+
+rC.pregcons()
+.then((objecto)=>{wRO.imprimir("objecto.json", objecto)})
+.catch((err)=>{console.log(err)
+})

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="/Front/script.js"></script>
+    <title>Alumnos</title>
+</head>
+<body>
+    <div class="cuerpo">
+        <header>
+         
+            <nav>
+
+                <a href="index.html">Alumnos</a> 
+                
+                <a href="notas.html">Notas</a> 
+            
+                <a href="media.html">Media</a>
+            
+              </nav>
+        </header>
+
+        <div class="listado">
+            <div class="implist" id="impresion">
+               
+            </div>
+            <div class="inputsbd">
+                
+            <div class="formulario">
+                <form action ="" class="contact" >
+                    <input type="date"  name="date" placeholder="Fecha" id="date">
+                    <input type="number" name="mark"placeholder="Nota" id="mark">
+                    <input type="number" name="subject"placeholder="ID Asignatura" id="subject_id">
+                    <input type="number" name="student_id"placeholder="ID Alumno" id="student_id">
+                
+                     <div class="botones">
+                      <button class="boton" id="post" type="reset" onclick= "postMark()" >Post</button>
+                        <button class="boton" id="get" type="reset" onclick= "getMark()" >Get</button>
+                        <button class="boton" id="put" type="reset" onclick= "putMark()" >Put</button>
+                        <button class="boton" id="delete" type="reset" onclick= "deleteMark()" >Delete</button>
+                     </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>

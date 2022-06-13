@@ -24,11 +24,11 @@ rl.question("Name?", (dato) => {
 
                 }
             });
-            fs.readFile("object.json", 'utf8', (err) => {
+            fs.readFile("object.json", 'utf8', (err,data) => {
                 if (err)
                     console.log(err);
                 else {
-                    console.log("Objeto leido\n");
+                    console.log(data);
 
                 }
             })

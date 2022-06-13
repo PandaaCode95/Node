@@ -16,7 +16,7 @@ connection.connect(function(error){
     }
 })
 
-// let sql = "UPDATE codenotch2.marks SET mark=5 WHERE mark < 5"
+// let sql = "UPDATE codenotch2.marks SET mark=5 WHERE mark < 4"
 
 
 // connection.query(sql, function(err, result){
@@ -40,6 +40,7 @@ connection.query(sql, function(err, result){
         console.log(result)
     }
 })
+// let sql = "SELECT * FROM codenotch2.teacher"
 
 // connection.query(sql, function(err, result){
 //     if(err){
